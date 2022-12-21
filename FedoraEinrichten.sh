@@ -18,7 +18,7 @@ if [ "$EUID" == 0 ]
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 	mkdir ~/.config/nvim
 	git clone https://github.com/NortheLo/vimrc
-	mv vimrc/init.vim ~/.config/nvim/
+	mv ../vimrc/init.vim ~/.config/nvim/
 
 	echo "Everything should be set up now!" && reboot
 fi
