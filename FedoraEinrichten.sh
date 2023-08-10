@@ -4,7 +4,7 @@ if [ "$EUID" == 0 ]
 	then dnf update -y
 	rpm --import https://packages.microsoft.com/keys/microsoft.asc
 	sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-	dnf install gparted code gfortran neovim gnome-tweak-tool gnome-extensions-app kernel-devel gcc g++ alacarte virt-manager kicad kicad-packages3d lm_sensors -y 
+	dnf install gparted code gfortran neovim gnome-tweak-tool gnome-extensions-app kernel-devel gcc g++ cmake alacarte virt-manager kicad kicad-packages3d lm_sensors -y 
 	mkdir ~/Documents/Programming 
  	mkdir ~/Dosuments/Programming/C++ ~/Documents/Programming/C ~/Documents/Schematics ~/Documents/Programming/Shell
 	systemctl enable sshd
